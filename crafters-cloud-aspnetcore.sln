@@ -10,7 +10,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CraftersCloud.AspNetCore.CopyAzureKeyVaultSecrets.HostingStartup", "CraftersCloud.AspNetCore.CopyAzureKeyVaultSecrets.HostingStartup\CraftersCloud.AspNetCore.CopyAzureKeyVaultSecrets.HostingStartup.csproj", "{D42D367A-E6CA-4D5F-A68D-9FC814C99CE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CraftersCloud.AspNetCore.CopyAzureKeyVaultSecrets.HostingStartup.Tests", "CraftersCloud.AspNetCore.CopyAzureKeyVaultSecrets.HostingStartup.Tests\CraftersCloud.AspNetCore.CopyAzureKeyVaultSecrets.HostingStartup.Tests.csproj", "{AD44E47F-E25B-42AA-8354-EB8B94F70F94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CraftersCloud.AspNetCore.CopyAzureKeyVaultSecrets.HostingStartup.Tests", "CraftersCloud.AspNetCore.CopyAzureKeyVaultSecrets.HostingStartup.Tests\CraftersCloud.AspNetCore.CopyAzureKeyVaultSecrets.HostingStartup.Tests.csproj", "{AD44E47F-E25B-42AA-8354-EB8B94F70F94}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{09B8C625-46E7-42CC-B5DA-42067C126FC2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{4236E341-9C62-4D9E-BFD2-814921285489}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\dotnet.yml = .github\workflows\dotnet.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +36,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4236E341-9C62-4D9E-BFD2-814921285489} = {09B8C625-46E7-42CC-B5DA-42067C126FC2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C260615A-5A9F-47CB-8EBD-05DBD7B15837}

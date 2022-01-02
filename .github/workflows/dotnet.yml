@@ -23,7 +23,7 @@ jobs:
       run: dotnet restore
 
     - name: Build
-      run: dotnet build --no-restore --configuration Release
+      run: dotnet build --no-restore --configuration Release --version-suffix prerelease-$(date +%Y%m%d%H%M%S)
     
     - name: Test
       run: dotnet test --no-build --verbosity normal --configuration Release

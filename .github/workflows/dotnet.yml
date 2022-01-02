@@ -32,3 +32,5 @@ jobs:
 
     - name: Push to GitHub package registry
       run: dotnet nuget push *.nupkg
+      env:
+       NUGET_AUTH_TOKEN: ${{secrets.NUGET_AUTH_TOKEN}}

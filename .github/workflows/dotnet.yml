@@ -19,7 +19,7 @@ jobs:
       with:
         dotnet-version: 6.0.x
       env:
-          NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          NUGET_AUTH_TOKEN: ${{secrets.NUGET_AUTH_TOKEN}}
 
     - name: Restore dependencies
       run: dotnet restore

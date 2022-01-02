@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - uses: actions/checkout@v2
@@ -18,6 +18,9 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 6.0.x
+      env:
+          NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
     - name: Restore dependencies
       run: dotnet restore
 
@@ -31,6 +34,4 @@ jobs:
       run: dotnet pack -c Release -o . --configuration Release --version-suffix prerelease-$(date +%Y%m%d%H%M%S)
 
     - name: Push to GitHub package registry
-      run: dotnet nuget push *.nupkg -k ${NUGET_AUTH_TOKEN} -s https://nuget.pkg.github.com/crafters-cloud/index.json --skip-duplicate
-      env:
-       NUGET_AUTH_TOKEN: ${{secrets.NUGET_AUTH_TOKEN}}
+      run: dotnet nuget push *.nupkg -s https://nuget.pkg.github.com/crafters-cloud/index.json --skip-duplicate

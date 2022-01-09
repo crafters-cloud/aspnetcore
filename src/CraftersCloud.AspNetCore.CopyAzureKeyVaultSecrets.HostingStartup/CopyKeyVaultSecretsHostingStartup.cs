@@ -55,6 +55,12 @@ namespace CraftersCloud.AspNetCore.CopyAzureKeyVaultSecrets.HostingStartup
                             store.Save();
                         }
                     }
+                    else
+                    {
+                        var message =
+                            $"UserSecretsId could not be determined. If you are in development please check whether you have enabled UserSecrets in your web project. If you are in production, please disable '{HostingStartupName}_{ConfigurationFeatureName}' configuration variable. This tool should not be used in production.";
+                        throw new InvalidOperationException(message);
+                    }
                 }
             }
         }

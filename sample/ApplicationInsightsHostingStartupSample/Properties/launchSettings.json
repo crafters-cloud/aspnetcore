@@ -1,0 +1,28 @@
+﻿{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:22907",
+      "sslPort": 44333
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "weatherforecast",
+      "environmentVariables": {
+        "ASPNETCORE_HOSTINGSTARTUP__COPYKEYVAULTSECRETS__CONFIGURATIONENABLED": "true",
+        "ASPNETCORE_HOSTINGSTARTUP__COPYKEYVAULTSECRETS__COPYINTERVAL": "7.00:00:00",
+        "ASPNETCORE_HOSTINGSTARTUP__COPYKEYVAULTSECRETS__FORCECOPYENABLED": "false",
+
+        "ASPNETCORE_HOSTINGSTARTUP__KEYVAULT__CONFIGURATIONENABLED": "false",
+        "AzureServicesAuthConnectionString": "RunAs=Developer; DeveloperTool=VisualStudio",
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_HOSTINGSTARTUP__KEYVAULT__CONFIGURATIONVAULT": "https://put-your-dev-vault-here.vault.azure.net"
+      }
+    }
+  }
+}

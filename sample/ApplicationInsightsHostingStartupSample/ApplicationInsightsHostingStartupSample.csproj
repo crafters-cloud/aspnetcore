@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>7779f2e9-75cc-4859-85d3-1a46d6c56795</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.AzureKeyVault.HostingStartup" Version="2.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\CraftersCloud.AspNetCore.CopyAzureKeyVaultSecrets.HostingStartup\CraftersCloud.AspNetCore.CopyAzureKeyVaultSecrets.HostingStartup.csproj" />
+  </ItemGroup>
+
+</Project>

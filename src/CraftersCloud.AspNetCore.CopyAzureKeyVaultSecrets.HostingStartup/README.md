@@ -42,9 +42,9 @@ Set the environment variables for the profiles for which you want this tool to r
 
 This variable is used to set Url to the Azure Key Vault from which you want to read the secrets.
 
-This library uses same Visual Studio's Connected Service authentication mechanism as the Microsoft.AspNetCore.AzureKeyVault.HostingStartup NuGet. (see [Add Key Vault to your web application by using Visual Studio Connected Services](https://docs.microsoft.com/en-us/azure/key-vault/general/vs-key-vault-add-connected-service])
+This library uses same Visual Studio's Connected Service authentication mechanism as the Microsoft.AspNetCore.AzureKeyVault.HostingStartup NuGet. (see [Add Key Vault to your web application by using Visual Studio Connected Services](https://docs.microsoft.com/en-us/azure/key-vault/general/vs-key-vault-add-connected-service]).
 
-The Microsoft account under which you are logged in to Visual Studio must have granted **GET** and **LIST** Secret Management Operations in the corresponding Key Vault Access Policies for the secrets to be read locally. More info [Key Vault security features](https://docs.microsoft.com/en-us/azure/key-vault/general/security-features)
+The Microsoft account under which you are logged in to Visual Studio must have granted **GET** and **LIST** Secret Management Operations in the corresponding Key Vault Access Policies for the secrets to be read locally. More info [Key Vault security features](https://docs.microsoft.com/en-us/azure/key-vault/general/security-features).
 
 ```json
 "ASPNETCORE_HOSTINGSTARTUP__KEYVAULT__CONFIGURATIONVAULT": "https://put-your-dev-vault-here.vault.azure.net"
